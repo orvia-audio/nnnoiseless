@@ -62,3 +62,7 @@ static_assertions = "1.1.0"
 
 [package.metadata.capi]
 header_name = "rnnoise"
+
+[lints.rust.unexpected_cfgs]
+level = "warn"
+check-cfg = ["cfg(cargo_c)"]
